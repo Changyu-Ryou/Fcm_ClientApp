@@ -1,5 +1,6 @@
 package com.devr.fcm_client;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -16,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Context context = this;
+
+//        MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.sound_dingdong);
+//        mediaPlayer.start();
 
         /* firebase FCM 기능*/
         FirebaseInstanceId.getInstance().getInstanceId()
