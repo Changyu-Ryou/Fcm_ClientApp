@@ -36,7 +36,7 @@ public class MyFireBaseMessagingService extends FirebaseMessagingService {
             //String messageTitle = remoteMessage.getNotification().getTitle();   //메시지 제목
 
             /* 알림의 탭 작업 설정 */
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, AlarmActivity.class);
 
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -57,7 +57,7 @@ public class MyFireBaseMessagingService extends FirebaseMessagingService {
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
             /* 새로운 인텐트로 앱 열기 */
-            Intent newintent = new Intent(this, MainActivity.class);
+            Intent newintent = new Intent(this, AlarmActivity.class);
             newintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity( newintent );
 
