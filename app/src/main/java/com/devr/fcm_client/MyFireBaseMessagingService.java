@@ -38,7 +38,7 @@ public class MyFireBaseMessagingService extends FirebaseMessagingService {
             /* 알림의 탭 작업 설정 */
             Intent intent = new Intent(this, MainActivity.class);
 
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
             String channelId = "Channel ID";
