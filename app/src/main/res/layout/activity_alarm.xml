@@ -4,10 +4,20 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="373dp"
+        android:src="@drawable/alarm" />
+
+
     <TextView
+        android:layout_marginTop="0px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alarm Activity"
+        android:textAlignment="center"
+        android:textFontWeight="800"
+        android:textColor="#FB4641"
+        android:text="\n 비상 알림입니다.\n 지금 즉시 대피하세요"
         android:textSize="30dp" />
 
 </LinearLayout>
